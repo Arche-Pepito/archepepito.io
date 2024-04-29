@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arche Pepito</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <div class="logo-text">Arche Pepito</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="container">
+          <div class="hero-pic">
+            <img src="images/ID.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>
+              Hello I'm
+              <span class="input">Frontend-Developer</span>
+            </h5>
+            <h1>Arche Pepito</h1>
+            <p style="text-align: justify">
+              As a passionate and versatile Frontend Developer and Graphics
+              Designer, I blend creativity with technical expertise to craft
+              engaging digital experiences. With a keen eye for design
+              aesthetics and a strong command of frontend technologies, I bring
+              ideas to life through intuitive interfaces and visually stunning
+              graphics.
+            </p>
+
+            <div class="btn-group">
+              <a href="#" class="btn active">Download CV</a>
+              <a href="co" class="btn">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="resume-section">
+      <div class="wrapper">
+        <h2>Resume</h2>
+        <div class="resume-content">
+          <h3>Education</h3>
+          <div class="resume-item">
+            <h4>
+              Bachelor of Science in Information Technology - ACLC College of
+              Bukidnon, INC.
+            </h4>
+            <p>Year of Graduation</p>
+          </div>
+          <!-- Add more education entries if needed -->
+
+          <h3>Experience</h3>
+          <div class="resume-item">
+            <h4>Graphics Artist - Libran International Printing services</h4>
+            <p>Duration: Start Date - End Date</p>
+            <p>Description of responsibilities and achievements</p>
+          </div>
+          <!-- Add more experience entries if needed -->
+
+          <h3>Skills</h3>
+          <ul class="skills-list">
+            <li><i class="fab fa-photoshop"></i> Skill 1</li>
+            <li><i class="fas fa-paint-brush"></i> Skill 2</li>
+            <li><i class="fas fa-desktop"></i> Skill 3</li>
+            <!-- Add more skills as needed -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-media">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© 2024 Arche Pepito. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Typed.js for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** Creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Frontend Developer,", " Graphic designer"],
+        typedSpeed: 51,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
